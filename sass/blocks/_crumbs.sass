@@ -1,0 +1,54 @@
+
+.faq-breadcrumbs-faq
+  font-family: 'Roboto', sans-serif
+  font-weight: 400
+  font-size: 14px
+  line-height: 20px
+  color: #009839
+  margin-right: 10px
+  position: relative
+  cursor: pointer
+
+.faq-breadcrumbs-faq:after
+  content: ""
+  position: absolute
+  top: 2px
+  right: -15px
+  width: 8px
+  height: 12px
+  background-image: url(https://faq-plus.ru/media/breadcrumbs.svg)
+
+.faq-breadcrumbs-faq:last-child:after
+  content: ""
+  width: 0px
+
+.faq
+  position: relative
+
+.faq-breadcrumbs
+  padding-bottom: 50px
+  padding-top: 25px
+  width: 840px
+  margin: 0 auto
+
+.faq-heading
+  +bold
+  font-size: 40px
+  line-height: 56px
+  padding-bottom: 25px
+  width: 840px
+  margin: 0 auto
+
+.faq-breadcrumbs-faq-item
+  font-family: 'Roboto', sans-serif
+  font-weight: 400
+  font-size: 14px
+  line-height: 20px
+  color: #009839
+  margin-right: 10px
+  margin-left: 10px
+  cursor: pointer
+
+@media (max-width: 600px)
+  .faq::before
+    height: 250px

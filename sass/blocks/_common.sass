@@ -1,0 +1,98 @@
+
+.faq-common-section
+  padding-top: 100px
+  width: 840px
+  margin: 0 auto
+.faq-common-section-heading
+  +bold
+  font-weight: 700
+  font-size: 32px
+  line-height: 40px
+.faq-common-section-items
+  margin-top: 50px
+  li
+    margin-bottom: 40px
+    list-style: none
+    &:last-child
+      margin-bottom: 0
+.faq-common-section-items-item-heading
+  +bold
+  font-size: 24px
+  line-height: 32px
+  margin-bottom: 5px
+.faq-common-section-items-item-description
+  font-family: 'Roboto', sans-serif
+  font-weight: 400
+  font-size: 16px
+  line-height: 24px
+  color: #6A6A6A
+  margin-bottom: 5px
+.faq-common-section-items-item-more
+  font-family: 'Roboto', sans-serif
+  font-weight: 400
+  font-size: 13px
+  line-height: 16px
+  color: #00B2A9
+  position: relative
+  width: 90px
+  display: block
+.faq-common-section-items-item-more::after
+  content: ""
+  width: 11px
+  height: 11px
+  position: absolute
+  top: 2px
+  right: 0px
+  background-image: url(https://faq-plus.ru/media/arrow-icon.svg)
+  transition: 0.3s
+    
+
+.faq-common-section-items li
+  position: relative
+  padding-left: 65px
+  cursor: pointer
+.faq-common-section-items li:before
+  content: ""
+  position: absolute
+  left: 0px
+  top: 0px
+  width: 56px
+  height: 56px
+  background-image: url(https://faq-plus.ru/media/time-icon.svg)
+
+
+@media (max-width: 600px)
+  .faq-common-section-heading
+    font-size: 21px
+    line-height: 24px
+  .faq-common-section
+    padding-top: 70px
+  .faq-common-section-items
+    margin-top: 80px
+  .faq-common-section-items li::before
+    top: -60px
+    left: 0
+  .faq-common-section-items li
+    padding-left: 0
+    margin-bottom: 100px
+  .faq-common-section-items li:last-child
+    margin-bottom: 0
+  .faq-common-section-items-item-heading
+    font-size: 18px
+    line-height: 24px
+  .faq-common-section-items-item-description
+    font-size: 14px
+    line-height: 20px
+
+@media (max-width: 500px)
+  .faq-heading
+    font-size: 24px
+    line-height: 32px
+  .faq-breadcrumbs
+    display: none
+  .faq-actual-section-heading
+    font-size: 21px !important
+    line-height: 24px !important
+  .faq-actual-section-item
+    font-size: 18px !important
+    line-height: 24px !important
