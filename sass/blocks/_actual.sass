@@ -13,6 +13,17 @@
   list-style: none
 .faq-actual-section-items li
   margin-bottom: 30px
+  width: 100%
+
+.faq-actual-section-item
+  +bold
+  font-size: 24px
+  line-height: 32px
+  color: #000
+  transition: 0.3s
+  margin-bottom: 30px
+  width: 100%
+  display: block
   position: relative
   &::after
     content: ""
@@ -32,13 +43,6 @@
     left: 190px
     background-image: url(../img/Path.svg)
     opacity: 0
-.faq-actual-section-item
-  +bold
-  font-size: 24px
-  line-height: 32px
-  color: #000
-  transition: 0.3s
-  margin-bottom: 30px
 
   // &:hover::after
   //   opacity: 0
@@ -240,6 +244,8 @@
     flex-direction: column
   .faq-actual-section
     padding-top: 50px
+
+@media (max-width: 425px)
   .faq-actual-section-item::after
-    left: 100%
+    left: 93%
     top: 2px
